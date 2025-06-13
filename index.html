@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kisah Kita - Anass & Amel</title>
+  <style>
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes petalsFall {
+      0% { transform: translateY(-10%); opacity: 1; }
+      100% { transform: translateY(100vh); opacity: 0; }
+    }
+
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(to bottom right, #fff0f5, #ffe4e1);
+      color: #4b2e2e;
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+      border-radius: 20px;
+      background-image: url('https://www.transparenttextures.com/patterns/sakura.png');
+      animation: fadeInUp 1.5s ease;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #d6336c;
+      text-shadow: 1px 1px #fff;
+      animation: fadeInUp 2s ease;
+    }
+
+    .section {
+      background: #fffafa;
+      border: 2px solid #ffc0cb;
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      animation: fadeInUp 1.2s ease;
+    }
+
+    .highlight {
+      background-color: #ffe6ea;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 14px;
+      color: #999;
+      margin-top: 50px;
+      animation: fadeInUp 2.5s ease;
+    }
+
+    .photo-gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .photo-gallery div {
+      background: #fff;
+      border: 1px solid #ffc0cb;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .photo-gallery img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .music-section {
+      text-align: center;
+      margin-bottom: 30px;
+      animation: fadeInUp 1.8s ease;
+    }
+
+    .button-play {
+      background-color: #ff99cc;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+      animation: fadeInUp 2s ease;
+    }
+
+    .button-play:hover {
+      background-color: #ff66aa;
+    }
+
+    .photo-section {
+      margin-top: 40px;
+    }
+
+    /* Petal animation */
+    .petal {
+      position: absolute;
+      top: -50px;
+      width: 30px;
+      height: 30px;
+      background-image: url('https://cdn-icons-png.flaticon.com/512/833/833472.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      opacity: 0.7;
+      animation: petalsFall 10s linear infinite;
+    }
+  </style>
+</head>
+<body>
+  <h1>💞 Kisah Kita 💞</h1>
+  <h2>Anass & Amel</h2>
+
+  <div class="music-section">
+    <h3>🎶 Lagu Yang relate sama kita</h3>
+    <audio id="bg-music" loop>
+      <source src="lagu.mp3" type="audio/mpeg">
+      Browser kamu tidak mendukung audio. Coba pakai browser lain ya!
+    </audio>
+    <button class="button-play" onclick="document.getElementById('bg-music').play()">Putar Musik</button>
+  </div>
+
+  <div class="section">
+    <h3>🌸 Dari SD ke SMK 🌸</h3>
+    <p class="highlight">
+      Siapa sangka? Dari anak kecil yang cuma kenal karena duduk sebangku di kelas 6 SD, sekarang jadi dua remaja yang tumbuh bareng sampai SMK kelas 2. Kita tumbuh bareng, ketawa bareng, kadang nangis juga... tapi gak pernah ninggalin. Kamu adalah bagian dari masa kecilku, dan sekarang kamu selalu ada dihidupku.
+    </p>
+  </div>
+
+  <div class="section">
+    <h3>🎁 Ulang Tahun Penuh Haru 🎁</h3>
+    <p class="highlight">
+      Aku tahu banget kondisi kamu gak selalu mudah. Tapi waktu ulang tahunku, kamu bikin aku ngerasa kayak cewek paling spesial di dunia. Dari roti, jam, kipas, sandal, headset, sampai seblak... semuanya kamu kasih bukan karena mahal, tapi karena penuh cinta. Aku gak cuma terharu, aku merasa dicintai dengan tulus. Makasih ya, cinta.
+    </p>
+  </div>
+
+  <div class="section">
+    <h3>♊ Dua Gemini, Satu Hati ♊</h3>
+    <p class="highlight">
+      Kita sama-sama Gemini. Sama-sama aneh, sama-sama random, sama-sama sensitif. Tapi mungkin karena itulah kita nyambung banget. Kamu ngerti aku bahkan saat aku sendiri bingung. Kamu sabar saat aku meledak. Dan aku pun makin cinta karena kamu gak pernah lelah hadapin aku. Chaos kita tuh... indah.
+    </p>
+  </div>
+
+  <div class="section">
+    <h3>💌 Untuk Anass 💌</h3>
+    <p class="highlight">
+      Anass, makasih udah jadi tempat pulang terbaik. Kamu mungkin gak puitis, tapi kamu romantis lewat perhatian kecilmu. Kamu mungkin gak banyak bicara, tapi tindak kamu selalu bersuara. Aku sayang kamu bukan cuma karena kamu baik, tapi karena kamu selalu jadi rumah yang nyaman — meskipun dunia sering ribut. Tetaplah jadi kamu, karena aku jatuh cinta pada versi kamu yang paling sederhana.
+    </p>
+  </div>
+
+  <div class="photo-section">
+    <h3>📸 Momen Spesial Kita</h3>
+    <div class="photo-gallery">
+      <div><img src="1.jpg" alt="Foto 1"><p>"Matamu selalu bisa bikin hariku cerah."</p></div>
+      <div><img src="3.jpg" alt="Foto 2"><p>"Tawamu itu obat paling manjur buat hatiku."</p></div>
+      <div><img src="4.jpg" alt="Foto 3"><p>"Genggamanmu bikin aku merasa aman."</p></div>
+      <div><img src="5.jpg" alt="Foto 4"><p>"Kamu selalu jadi alasanku tersenyum."</p></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    Dibuat dengan cinta, bunga-bunga lucu, dan orang tersayangmu 🌸💖
+  </div>
+
+  <!-- Love jatuh -->
+  <script>
+    for(let i = 0; i < 20; i++) {
+      let petal = document.createElement('div');
+      petal.className = 'petal';
+      petal.style.left = Math.random() * 100 + 'vw';
+      petal.style.animationDuration = (5 + Math.random() * 5) + 's';
+      petal.style.animationDelay = (Math.random() * 5) + 's';
+      document.body.appendChild(petal);
+    }
+  </script>
+</body>
+</html>
